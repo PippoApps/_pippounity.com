@@ -6,6 +6,7 @@ public class FollowCamera : MonoBehaviour
 {
     [SerializeField] public float _refreshTime = 0.02f;
     [SerializeField] public string _cameraTag;
+    [SerializeField] public bool _rotateWithCamera;
     private Camera _camera;
     private WaitForSecondsRealtime _waitFractionOfSecond;
     private bool _active = true;
@@ -40,6 +41,7 @@ public class FollowCamera : MonoBehaviour
         {
             //_system.L("Following Camera: " + this.name);
             transform.position = _camera.transform.position;
+            if (_rotateWithCamera) transform.rotation = _camera.transform.rotation;
 
           //+= 10;
             yield return _waitFractionOfSecond;

@@ -16,6 +16,7 @@ public class MoveCamera : MonoBehaviour
 	private bool isRotating;    // Is the camera being rotated?
 	private bool isZooming;     // Is the camera zooming?
 
+
 	//
 	// UPDATE
 	//
@@ -43,7 +44,7 @@ public class MoveCamera : MonoBehaviour
 void Update()
 	{
 
-
+		//return;
 
 		// Get the left mouse button
 		if (Input.GetMouseButtonDown(0))

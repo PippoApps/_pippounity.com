@@ -11,7 +11,7 @@ using UnityEngine;
 // Provides logging functionalities and else.
 [DefaultExecutionOrder(-1002)]
 public class SystemPippoUnity
-    {
+{
         public static bool HAS_CONNECTION;
         private static int _mainCounter = 0;
         private string _debugId;
@@ -20,7 +20,7 @@ public class SystemPippoUnity
         {
             //_managedObj = obj;
             _debugId = "[" + debugId + "]";
-            L("System initialized.");
+            //L("System initialized.");
         }
         public void L(string log)
         {
